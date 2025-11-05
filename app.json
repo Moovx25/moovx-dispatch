@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "moovx-dispatch",
+    "slug": "moovx-dispatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/cc73b44e-4a79-4b7d-aed6-79d1c2a99bbc"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera for profile pictures and delivery verification.",
+        "NSLocationWhenInUseUsageDescription": "This app requires your location to provide navigation and live tracking.",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access for profile photo selection."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "jsEngine": "jsc",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.moovx.dispatch"
+    },
+    "web": {
+      "favicon": "./assets/images/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cc73b44e-4a79-4b7d-aed6-79d1c2a99bbc"
+      },
+      "tomtomApiKey": "7wjmlJ32cE1FKkAlTpAtCcIUiNRxA7Kc"
+    },
+    "plugins": [
+      "expo-location",
+      "expo-camera",
+      "expo-image-picker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/logo.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}

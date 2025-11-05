@@ -1,0 +1,22 @@
+{
+       "indexes": [
+         {
+           "collectionGroup": "rides",
+           "queryScope": "COLLECTION",
+           "fields": [
+             {
+               "fieldPath": "status",
+               "order": "ASCENDING"
+             },
+             {
+               "fieldPath": "userId",
+               "order": "ASCENDING"
+             },
+             {
+               "fieldPath": "createdAt",
+               "order": "DESCENDING"
+             }
+           ]
+         }
+       ]
+     }
