@@ -6,6 +6,8 @@ android {
     compileSdkVersion 35
     buildToolsVersion "35.0.0"
 
+    namespace 'com.moovx.dispatch'
+
     defaultConfig {
         applicationId "com.moovx.dispatch"
         minSdkVersion 24
@@ -34,20 +36,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            credentials {
+                username = 'mapbox'
+                password = project.findProperty("MAPBOX_DOWNLOADS_TOKEN") ?: System.getenv("MAPBOX_DOWNLOADS_TOKEN")
+            }
+        }
+    }
 }
 
 dependencies {
     implementation "com.facebook.react:react-android"
     implementation 'com.mapbox.maps:android-ndk27:11.15.2'
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:6.11.0'
-}
-
-repositories {
-    maven {
-        url 'https://api.mapbox.com/downloads/v2/releases/maven'
-        credentials {
-            username = 'mapbox'
-            password = project.findProperty("MAPBOX_DOWNLOADS_TOKEN") ?: System.getenv("MAPBOX_DOWNLOADS_TOKEN")
-        }
-    }
 }
