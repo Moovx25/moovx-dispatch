@@ -7,11 +7,13 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "channel": "dev"
+      "channel": "dev",
+      "node": "20.x"
     },
     "preview": {
       "distribution": "internal",
-      "channel": "preview"
+      "channel": "preview",
+      "node": "20.x"
     },
     "production": {
       "android": {
@@ -21,8 +23,11 @@
         "simulator": true
       },
       "autoIncrement": true,
-      "channel": "production"
-    }
+      "channel": "production",
+      "node": "20.x"
+    },
+    "preInstall": "npm install",
+    "install": "npm ci --include=dev"
   },
   "submit": {
     "production": {}
