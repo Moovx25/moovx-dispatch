@@ -15,9 +15,7 @@
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/cc73b44e-4a79-4b7d-aed6-79d1c2a99bbc"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
@@ -47,7 +45,7 @@
       "eas": {
         "projectId": "cc73b44e-4a79-4b7d-aed6-79d1c2a99bbc"
       },
-      "tomtomApiKey": "7wjmlJ32cE1FKkAlTpAtCcIUiNRxA7Kc"
+      "mapboxApiKey": "pk.eyJ1IjoibW9vdngiLCJhIjoiY204bTlmbThlMDA1NDJpc2czaWhhc2N2NCJ9._9xfhyvM6_CmPLu0FRoH8A"
     },
     "plugins": [
       "expo-location",
@@ -61,8 +59,6 @@
         }
       ]
     ],
-    "runtimeVersion": {
-      "policy": "appVersion"
-    }
+    "runtimeVersion": "1.0.0"
   }
 }
